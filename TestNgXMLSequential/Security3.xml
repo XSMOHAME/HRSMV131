@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SECURITY SUITE - 3">
+
+	<test name="SECURITY MODULE" thread-count="1">
+		<classes>
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_WBSFApprovalsGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_WBStudioFacilitiesGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_WorkforceAdministrationGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_WorkForceAnalyticsGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_ChangingAssignmentGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRCaseEncryptionAccessHRAdmin" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRCaseEncryptionAccessHRAgent" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRCaseEncryptionAccesWBEmployee" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRProfileEncryptionAccessWBEmployee" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRProfileEncryptionAccessHRAdmin" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRProfileEncryptionAccessHRAgent" />
+
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PAYROLL REQUEST SUITE">
+
+	<test name="PAYROLL REQUEST MODULE" thread-count="1">
+		<classes>
+ 			<class	name="com.snow.testscripts.PayrollRecordsRequest.CompletingPayrollRequestForm" />
+			<class	name="com.snow.testscripts.PayrollRecordsRequest.PayrollRequestInITILView" />
+			<class	name="com.snow.testscripts.PayrollRecordsRequest.ReviewingPayrollTasks" />
+			<class	name="com.snow.testscripts.PayrollRecordsRequest.SubmitPayrollRequest" />
+			<class	name="com.snow.testscripts.PayrollRecordsRequest.ValidatingRequestTypeDropdown" />
+		</classes>
+	</test>
+</suite>

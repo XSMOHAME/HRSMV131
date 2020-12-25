@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TUITION REIMBURSEMENT SUITE">
+
+	<test name="TUITION REIMBURSEMENT MODULE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.CancelTuitionReimbursement" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.FollowUpReminders" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.RejectTuitionReimbursement" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.CourseApprovalWithDeptPt1" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.PartTwoCheckRequestDetails" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.CheckRequestDetailsTwoCourses" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.CourseApprovalFourCourses" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.PartTwoCheckRequestDetailsFourCourses" />
+			<class
+				name="com.snow.testscripts.TuitionReimbursement.CheckRequestDatailsFourCourses" />
+		</classes>
+	</test>
+</suite>

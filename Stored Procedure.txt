@@ -1,0 +1,202 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_application_details`(
+	IN 	project_name varchar(64),
+    IN  application_id varchar(100),
+    IN application_name varchar(64)
+)
+BEGIN
+	insert into 
+
+reportintelligence.application_details 
+    values (project_name,application_id,application_name);
+END$$
+DELIMITER ; 
+
+----------------------------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_bug_details`(
+	IN  parent_bug  varchar(64)  , 
+	IN  child_bug   varchar(64)  , 
+	IN  bug_priority  int(11)  , 
+	IN  application_id  varchar(100)  , 
+	IN  bug_id varchar(125) ,
+	IN  child_bug_abbreviation  varchar(10)  
+
+)
+BEGIN
+	insert reportintelligence.bug_details
+    values (parent_bug, child_bug, bug_priority, application_id, bug_id, child_bug_abbreviation);
+END$$
+DELIMITER ;
+
+
+-----------------------------------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_favoriteapp_details`(
+	IN	app_ID	varchar(100),
+    IN	host_name varchar(100)
+)
+BEGIN
+	insert into reportintelligence.favoriteapp_details
+    values( app_ID , host_name );
+END$$
+DELIMITER ;
+
+
+-----------------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_job_details`(
+	IN job_name varchar(100) ,
+	IN application_id varchar(100)
+)
+BEGIN
+	insert into reportintelligence.job_details
+    values (job_name, application_id);
+END$$
+DELIMITER ;
+
+
+--------------------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_keyword_details`(
+	IN  error_id   varchar(60)  , 
+    IN  error_pattern  varchar(500)  , 
+	IN  bugtype  varchar(64)  , 	
+	IN  application_id  varchar(100)  
+
+)
+BEGIN
+	
+
+insert into reportintelligence.keyword_details
+    values (error_pattern, bugtype, error_id, application_id);
+END$$
+DELIMITER ;
+
+
+-----------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_parentBug_details`(
+	IN parent_bug_ varchar(64),
+    IN child_bug_ varchar(64)
+)
+BEGIN
+	insert reportintelligence.bug_details
+    (parent_bug,child_bug) 
+    values 
+
+(parent_bug_,child_bug_);
+END$$
+DELIMITER ;
+
+----------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_release_details`(
+	IN  release_   varchar(45)  , 
+	IN  start_date  date  , 
+	IN  end_date  date  
+)
+BEGIN 
+	insert into reportintelligence.release_details
+    values
+
+(release_,start_date,end_date); 
+END$$
+DELIMITER ;
+
+----------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_release_job_details`(
+	IN  release_   varchar(45) , 
+	IN  jobname  varchar(45)  
+)
+BEGIN
+	insert into release_job_details
+    values(release_,jobname);
+END$$
+DELIMITER ;
+
+
+-------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_run_details`(
+	IN job_name varchar(100) ,
+	IN run_id varchar(100) ,
+	IN run_name varchar(45) ,
+	IN starttime timestamp ,
+	IN endtime timestamp ,
+	IN 
+
+duration varchar(45) ,
+	IN total int(11) ,
+	IN passed int(11) ,
+	IN failed int(11) ,
+	IN notexecuted int(11) ,
+	IN platform varchar(64) ,
+	IN tool varchar(64) ,
+	IN environment varchar(64)
+)
+BEGIN
+	insert into reportintelligence.run_details 
+    values (job_name,run_id, run_name, starttime, endtime, duration, total, 
+			passed, failed, notexecuted, platform, tool, 
+
+environment);
+END$$
+DELIMITER ;
+
+-------------------------------
+
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_step_details`(
+	IN  tc_id   varchar(200)  , 
+	IN  step_no  int(11)  , 
+	IN  executed_time  time  , 
+	IN  action_  longtext  , 
+	IN  step_status  varchar(64)  , 
+	
+
+IN  screenshot_path  longtext  , 
+	IN  screenshot  mediumblob  , 
+	IN  failure_type  varchar(45)  
+)
+BEGIN
+	insert into reportintelligence.step_details
+    values 
+
+(tc_id,step_no,executed_time,action_,step_status,screenshot_path,screenshot,failure_type);
+END$$
+DELIMITER ;
+
+-------------------------------
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_tc_details`(
+	IN  run_id   varchar(100)  , 
+IN  modulename  varchar(300)  , 
+IN  tc_id   varchar(200)  , 
+IN  tc_name  longtext  , 
+IN  starttime  timestamp  , 
+IN  endtime  timestamp  , 
+IN  duration  varchar(64)  , 
+IN  tc_status  varchar(64)  , 
+IN  error_msg  longtext  , 
+IN  bug_type   varchar(64)  , 
+IN  comments  longtext  
+)
+BEGIN
+	insert into reportintelligence.tc_details
+    values (run_id, modulename, tc_id, tc_name, starttime, endtime, duration, tc_status, error_msg, bug_type, comments);
+END$$
+DELIMITER ;
+
+-------------------------------

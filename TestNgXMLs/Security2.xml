@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SECURITY SUITE - 2">
+
+	<test name="SECURITY MODULE" thread-count="1">
+		<classes>
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_OpenedByRequestedByAbout" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_OpenedBySecurity" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_OperationalExcellenceGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_OrgDevelopmentApprovalGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_PayrollChecksDisbursement" />
+
+			<class name="com.snow.testscripts.Security.HRSM_PayrollGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_PayrollSettlementAccountingGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_PayrollTaxGarnishmentsGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_TravelAndExpenseGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_UnionPensionHealthAndWelfareGroup" />
+
+		</classes>
+	</test>
+</suite>

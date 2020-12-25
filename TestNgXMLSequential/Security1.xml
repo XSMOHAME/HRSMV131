@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SECURITY SUITE - 1">
+
+	<test name="SECURITY MODULE" thread-count="1">
+		<classes>
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_AdministrationUserGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_ComplianceUserGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_ContactCenterUserGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_DataAdministrationUserGroup" />
+
+			<class name="com.snow.testscripts.Security.HRSM_HRISUserGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_HRSLeadershipGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_KnowledgeBaseArticleSMEsGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_KnowledgeBaseGovernanceGroup" />
+
+			<class name="com.snow.testscripts.Security.HRSM_LearningGroup" />
+
+			<class
+				name="com.snow.testscripts.Security.HRSM_LeaveOfAbsenceGroup" />
+
+		</classes>
+	</test>
+</suite>

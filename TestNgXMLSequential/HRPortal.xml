@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HR PORTAL SUITE">
+
+	<test name="HR PORTAL MODULE" thread-count="1">
+		<classes>
+
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalGeneralInquiryFormSearch" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalGTMCheckRequestForm" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalGTMFileRequestForm" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalGTMSystemSupportRequestForm" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalKnowledgeBase" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalResidualFormsVisibility" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalResponsiveness" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalSearchResults" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalSimplification" />
+			<class
+				name="com.snow.testscripts.HRPortal.HRPortalTuitionReimbursementRequestValidation" />
+
+
+		</classes>
+	</test>
+</suite>

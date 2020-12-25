@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CHECK REQUEST PARALLEL SUITE" thread-count="7"
+	parallel="tests">
+
+	<test name="CHECK REQUEST MODULE_SYSBROW_WIN_FF">
+		<parameter name="executeOn1" value="System Browsers" />
+		<parameter name="browser1" value="firefox" />
+		<parameter name="browserVersion1" value="70" />
+		<parameter name="os1" value="Windows" />
+		<parameter name="osVersion1" value="10" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<test name="CHECK REQUEST MODULE_SYSBROW_WIN_CHROME">
+		<parameter name="executeOn1" value="System Browsers" />
+		<parameter name="browser1" value="chrome" />
+		<parameter name="browserVersion1" value="75" />
+		<parameter name="os1" value="Windows" />
+		<parameter name="osVersion1" value="10" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<test name="CHECK REQUEST MODULE_SYSBROW_WIN_IE">
+		<parameter name="executeOn1" value="System Browsers" />
+		<parameter name="browser1" value="ie" />
+		<parameter name="browserVersion1" value="11" />
+		<parameter name="os1" value="Windows" />
+		<parameter name="osVersion1" value="10" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<test name="CHECK REQUEST MODULE_BROWSTACK_OSX_CHROME">
+		<parameter name="executeOn1" value="Browserstack" />
+		<parameter name="browser1" value="chrome" />
+		<parameter name="browserVersion1" value="80" />
+		<parameter name="os1" value="OS X" />
+		<parameter name="osVersion1" value="Mojave" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<test name="CHECK REQUEST MODULE_BROWSTACK_WIN_CHROME">
+		<parameter name="executeOn1" value="Browserstack" />
+		<parameter name="browser1" value="chrome" />
+		<parameter name="browserVersion1" value="80" />
+		<parameter name="os1" value="Windows" />
+		<parameter name="osVersion1" value="10" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<test name="CHECK REQUEST MODULE_BROWSTACK_WIN_FF">
+		<parameter name="executeOn1" value="Browserstack" />
+		<parameter name="browser1" value="firefox" />
+		<parameter name="browserVersion1" value="75" />
+		<parameter name="os1" value="Windows" />
+		<parameter name="osVersion1" value="10" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<test name="CHECK REQUEST MODULE_BROWSTACK_WIN_IE">
+		<parameter name="executeOn1" value="Browserstack" />
+		<parameter name="browser1" value="ie" />
+		<parameter name="browserVersion1" value="11" />
+		<parameter name="os1" value="Windows" />
+		<parameter name="osVersion1" value="10" />
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+
+	<!-- <test name="CHECK REQUEST MODULE_BROWSTACK_OSX_SAFARI"> <parameter 
+		name="executeOn1" value="Browserstack" /> <parameter name="browser1" value="Safari" 
+		/> <parameter name="browserVersion1" value="12" /> <parameter name="os1" 
+		value="OS X" /> <parameter name="osVersion1" value="Mojave" /> <classes> 
+		<class name="com.snow.testscripts.CheckRequest.CheckRequestForm" /> <class 
+		name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" 
+		/> <class name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" /> 
+		<class name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" 
+		/> </classes> </test> -->
+
+</suite>

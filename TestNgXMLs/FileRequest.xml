@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FILE REQUEST SUITE">
+
+	<test name="FILE REQUEST MODULE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.FileRequest.SubmitFileRequest" />
+			<class
+				name="com.snow.testscripts.FileRequest.ValidatingRequestTypeDropdown" />
+			<class
+				name="com.snow.testscripts.FileRequest.CompletingFileRequestForm" />
+			<class
+				name="com.snow.testscripts.FileRequest.FileRequestInITILView" />
+
+			<class name="com.snow.testscripts.FileRequest.ReviewingTasks" />
+		</classes>
+	</test>
+
+</suite>

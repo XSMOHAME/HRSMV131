@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GENERAL INQUIRY SUITE">
+
+	<test name="GENERAL INQUIRY MODULE" thread-count="1">
+		<classes>
+		<!-- Test For Commit -->
+			<class
+				name="com.snow.testscripts.GeneralInquiry.GeneralInquirySubmit" />
+		</classes>
+	</test>
+</suite>

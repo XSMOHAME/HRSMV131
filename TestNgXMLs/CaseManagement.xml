@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CASE MANAGEMENT SUITE">
+
+	<test name="CASE MANAGEMENT MODULE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.CaseManagement.CreateCaseGuest" />
+			<class
+				name="com.snow.testscripts.CaseManagement.HRCaseChangeAboutToResiduals" />
+			<class
+				name="com.snow.testscripts.CaseManagement.HRCaseChangingAboutToEmployee" />
+
+			<class name="com.snow.testscripts.CaseManagement.HRCaseProfile" />
+			<class
+				name="com.snow.testscripts.CaseManagement.HRCaseProfileChangeAbout" />
+			<class
+				name="com.snow.testscripts.CaseManagement.HRCaseProfileChangeRequestedBy" />
+			<class
+				name="com.snow.testscripts.CaseManagement.CreateCaseToCheckSLA" />
+			<class
+				name="com.snow.testscripts.CaseManagement.DecendingSLAOrder" />
+			<class
+				name="com.snow.testscripts.CaseManagement.UpdatingHRCaseDashBoard" />
+			<class
+				name="com.snow.testscripts.CaseManagement.CheckingDefaultView" />
+			<class
+				name="com.snow.testscripts.CaseManagement.DashboardListView" />
+			
+			 <class name="com.snow.testscripts.CaseManagement.CMSDetailedReport" />
+			
+			 <class name="com.snow.testscripts.CaseManagement.UploadHRCases" />
+
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CHECK REQUEST SUITE">
+
+	<test name="CHECK REQUEST MODULE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestForm" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CheckRequestPaymentTypeValidation" />
+			<class
+				name="com.snow.testscripts.CheckRequest.CompleteCheckRequest" />
+			<class
+				name="com.snow.testscripts.CheckRequest.SubmittedCheckRequestITIL" />
+		</classes>
+	</test>
+</suite>

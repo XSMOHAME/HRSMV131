@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KNOWLEDGE BASE SUITE">
+
+	<test name="KNOWLEDGE BASE MODULE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_ArticleFieldValidation" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_CreatingKnowledgeArticleAndSubmittingForApproval" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_RejectReviewApproveArticle" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_ViewPublishedArticle" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_EditPublishedArticle" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_RetireKnowledgeArticle" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_DeletingUnpublishedArticle" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_TestingArticleSuggestion" />
+			<class
+				name="com.snow.testscripts.KnowledgeBase.KB_TestingReportsAndDashboards" />
+		</classes>
+	</test>
+</suite>

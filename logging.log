@@ -1,0 +1,11 @@
+ERROR [2020-12-24 13:32:33,421](DBManipulation.java:365) - Error occured in getConnectionclass com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException
+ERROR [2020-12-24 13:32:33,422](DBManipulation.java:1003) - Error occured in error_idPresence
+java.lang.NullPointerException
+	at library.DBManipulation.error_idPresence(DBManipulation.java:993)
+	at library.DBManipulation.getKeyWordDetails(DBManipulation.java:934)
+	at parser.RI_Parser.main(RI_Parser.java:233)
+ERROR [2020-12-24 13:32:33,423](RI_Parser.java:730) - Error occured in RI Parserclass java.lang.NullPointerException
+ INFO [2020-12-24 13:32:33,423](RI_Parser.java:737) - Parser Execution Time : 0.0 minutes 8.0 seconds
+ INFO [2020-12-24 13:32:33,423](RI_Parser.java:738) - Exited from RI_Parser
+ERROR [2020-12-24 13:32:33,423](RI_Parser.java:741) - Class Name:library.ServiceParser Method Name:getRecentFolder Line Number:153 Error: null
+ERROR [2020-12-24 13:32:33,423](RI_Parser.java:741) - Class Name:parser.RI_Parser Method Name:main Line Number:235 Error: null

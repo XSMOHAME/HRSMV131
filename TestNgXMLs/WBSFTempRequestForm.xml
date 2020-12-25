@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WBSF TEMP REQUEST SUITE">
+
+	<test name="WBSF TEMP REQUEST MODULE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.WBSFTempRequestForm.AccessingandSubmittingForm1" />
+			<class
+				name="com.snow.testscripts.WBSFTempRequestForm.AccessingandSubmittingForm2" />
+			<class
+				name="com.snow.testscripts.WBSFTempRequestForm.AccessingandSubmittingForm3" />
+			<class
+				name="com.snow.testscripts.WBSFTempRequestForm.WBSFFormRejectionBypass" />
+			<class
+				name="com.snow.testscripts.WBSFTempRequestForm.Dashboard_and_reporting" />
+		</classes>
+	</test>
+</suite>

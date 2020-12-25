@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="allSuites" thread-count="1">
+	<suite-files>
+		<suite-file path="TestNgXMLSequential/SystemSupportRequest.xml" />
+
+		<suite-file path="TestNgXMLSequential/GeneralInquiry.xml" />
+
+		<suite-file path="TestNgXMLSequential/HRPortal.xml" />
+
+		<suite-file path="TestNgXMLSequential/CheckRequest.xml" />
+
+		<suite-file path="TestNgXMLSequential/FileRequest.xml" />
+
+		<suite-file path="TestNgXMLSequential/HRResidualForm.xml" />
+
+		<!-- <suite-file path="TestNgXMLSequential/KnowledgeBase.xml" />
+
+		<suite-file path="TestNgXMLSequential/CaseManagement.xml" />
+
+		<suite-file path="TestNgXMLSequential/TuitionReimbursement.xml" />
+
+		<suite-file path="TestNgXMLSequential/Security1.xml" />
+
+		<suite-file path="TestNgXMLSequential/Security2.xml" />
+
+		<suite-file path="TestNgXMLSequential/Security3.xml" />
+
+		<suite-file path="TestNgXMLSequential/WBSFTempRequestForm.xml" /> -->
+	</suite-files>
+</suite>

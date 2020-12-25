@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HR RESIDUAL FORM SUITE">
+
+	<test name="HR RESIDUAL FORM SUITE" thread-count="1">
+		<classes>
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingBeneficiaryRequestForm" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingBeneficiaryRequestFormITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingDissolveCorporationRequestForm" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingDissolveCorporationRequestFormITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingNameChangeRequestForm" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingNameChangeRequestFormITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingUpdateCorporationNameFEINRequestForm" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingUpdateCorporationNameFEINRequestFormITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingSSNCorrectionRequestForm" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingSSNCorrectionRequestFormITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCheckCopy" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCheckCopyITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCancelCheckInHand" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCancelCheckInHandITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCancelOnly" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCancelOnlyITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCurrentYearReissue" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestCurrentYearReissueITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestReissue" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingStopCancelRequestReissueITILCheck" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingNewHireRequestForm" />
+			<class
+				name="com.snow.testscripts.ResidualsForm.HRF_SubmittingNewHireRequestFormITILCheck" />
+
+		</classes>
+	</test>
+</suite>
